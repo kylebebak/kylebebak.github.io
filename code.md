@@ -33,8 +33,6 @@ custom_css: page
 
   When run on about 18 months of my location data, this process turned up 4400 visits (clusters of points where I'd been stationary somewhere for more than 6 minutes) that correspond to 750 unique locations. Trips are the sequences of moving points that occur between visits. The data was a lot of fun to explore. Probed with simple queries it can answer interesting aggregate questions, like where are the top five places I spend time on Saturdays, or, over a period of 6 months, at what time on average did I leave work on each of the different weekdays.
 
-  I built a front end for this data using the Google Maps API and some JS plugins. The data doesn't reveal anything that makes me uncomfortable, [so I made it available here](http://www.dronfelipe.com/location_history).
+  I built a front end for this data using the Google Maps API and some JS plugins. The data doesn't reveal anything that makes me uncomfortable, [so I made it available here](https://dronfelipe.onrender.com/location_history).
 
-- __Match It__ &mdash; An Android clone of the [Spot it!](http://www.blueorangegames.com/index.php/games/spotit) card game, on Google Play Store [here](https://play.google.com/store/apps/details?id=bebak.kyle.tap_it).
-
-- __Tortas__ &mdash; Pon tu propio changarro de tortas. Genera un [menú](http://www.dronfelipe.com/tortas) digno de los mejores puestos: sumamente variado, internacional y sin sentido alguno.
+- __Tortas__ &mdash; Pon tu propio changarro de tortas. Genera un [menú](https://dronfelipe.onrender.com/tortas) digno de los mejores puestos: sumamente variado, internacional y sin sentido alguno.

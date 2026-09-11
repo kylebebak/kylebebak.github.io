@@ -39,11 +39,11 @@ I use a `pre-commit` hook to ensure that these pages get built and included in e
 ~~~sh
 #!/bin/bash -e
 
-python3 _build/categories.py --posts_dir="_posts" --categories_file="_includes/categories.md"
+python _build/categories.py --posts_dir="_posts" --categories_file="_includes/categories.md"
 git add _includes/categories.md
 
 rm tags/*
-python3 _build/tags.py --posts_dir="_posts" --tags_dir="tags" --tags_file="_includes/tags.html"
+python _build/tags.py --posts_dir="_posts" --tags_dir="tags" --tags_file="_includes/tags.html"
 git add -u :/
 git add _includes/tags.html tags/*
 ~~~

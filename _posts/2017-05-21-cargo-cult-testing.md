@@ -163,7 +163,7 @@ This method isn't trivial, it probably warrants tests. That said, I tested it in
 ## Tests Worth Running
 The post above need not have been written, not because `_get` is buggy, but because using `mock` to monkey-patch Requests isn't the best way to test `_get`.
 
-Use something like [httpbin](http://httpbin.org) or [json-server](https://github.com/typicode/json-server) instead. `httpbin` runs an HTTP server that responds to all kinds of requests, and you can specify the status code and content of the response. Make it a part of your build. [Here's how you might do it with Travis](https://github.com/kylebebak/Requester/blob/master/.travis.yml).
+Use something like [httpbin](http://httpbin.org) or [json-server](https://github.com/typicode/json-server) instead. `httpbin` runs an HTTP server that responds to all kinds of requests, and you can specify the status code and content of the response. Make it a part of your build.
 
 This way your `_get` method sends real requests and gets real responses. You don't have to mock anything, so your tests are shorter and easier to write, and they test more of the intended behavior of your method. Avoid monkey-patch mocking unless you really need it.
 
@@ -175,7 +175,7 @@ __Tests are tools__. [Developer tools](https://en.wikipedia.org/wiki/Programming
 
 But in many cases not writing tests is insane. Let's say you're working on something fairly large and complex. Without tests, you have __no way of knowing__ it still works after you make changes. Requester, for example, has [plenty of tests](https://github.com/kylebebak/Requester/tree/master/tests) that have failed plenty of times. You want your tests to fail occasionally. If they don't, they're not telling you anything. Your team is either so good that writing tests is redundant, or you aren't testing the actual behavior of your software.
 
-Anyway, for Requester, some tests are end-to-end tests that depend on Sublime Text. Some are decoupled from Sublime Text and run automatically on Travis. And many of them cover __a lot__ of Requester's behavior.
+Anyway, for Requester, some tests are end-to-end tests that depend on Sublime Text. Some are decoupled from Sublime Text and run in CI. And many of them cover __a lot__ of Requester's behavior.
 
 
 ### Integration Tests

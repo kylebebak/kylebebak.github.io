@@ -12,11 +12,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Blog about code and other stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kylebebak.github.io" # the base hostname & protocol for your site
-twitter_username: KyleBebak
 github_username: kylebebak
 # no date or extension in url
 permalink: /post/:title
-home: "http://dronfelipe.com"
+home: "https://dronfelipe.onrender.com"
 
 # Build settings
 markdown: kramdown
