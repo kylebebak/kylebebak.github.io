@@ -1,2 +1,0 @@
-click==6.3
-python-frontmatter==0.2.1

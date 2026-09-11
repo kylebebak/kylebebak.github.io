@@ -2,11 +2,11 @@
 
 # the -e flag in the shebang line ensures that this hook exits if any of its commands exits with a non-zero exit status
 
-python3 _build/categories.py --posts_dir="_posts" --categories_file="_includes/categories.md"
+uv run _build/categories.py --posts_dir="_posts" --categories_file="_includes/categories.md"
 git add _includes/categories.md
 
 rm tags/*
-python3 _build/tags.py --posts_dir="_posts" --tags_dir="tags" --tags_file="_includes/tags.html"
+uv run _build/tags.py --posts_dir="_posts" --tags_dir="tags" --tags_file="_includes/tags.html"
 # the -u flag updates and removes index entries, but adds nothing
 git add -u :/
 git add _includes/tags.html tags/*

@@ -6,7 +6,7 @@ Code and rants about other stuff, like music and footy. The site itself is gener
 
 
 ## Installation
-Via `bundle` and `pip`. From the root directory, run `bundle`, and `pip install -r requirements.txt`.
+Via `bundle` and [`uv`](https://github.com/astral-sh/uv). From the root directory, run `bundle`, and `uv sync`.
 
 
 ## Build and Testing
